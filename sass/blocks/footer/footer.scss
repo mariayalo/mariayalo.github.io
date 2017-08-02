@@ -1,0 +1,26 @@
+.footer {
+  padding: 70px 60px;
+  background: #383838;
+  display: grid;
+  grid-auto-columns: auto 1fr auto;
+
+}
+
+.footer .logo {
+  text-align: left;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+@include respond-to(small) {
+  .footer {
+    grid-auto-columns: 100% 1fr auto;
+
+  }
+
+  .footer .logo {
+    text-align: center;
+    grid-column: 1;
+    margin-bottom: 30px;
+  }
+}

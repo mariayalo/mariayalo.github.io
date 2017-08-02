@@ -1,0 +1,17 @@
+.intro {
+  padding: 22px 0 0;
+  display: grid;
+  text-align: center;
+
+  grid-auto-columns: 20% 60%;
+  border-bottom: 1px solid #9F9DFF;
+
+  clear: both;
+
+}
+
+@include respond-to(small) {
+  .intro {
+    grid-auto-columns: 10% 80%;
+  }
+}

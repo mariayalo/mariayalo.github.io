@@ -1,0 +1,24 @@
+.logo {
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+
+}
+
+.logo a {
+    display: inline-block;
+    width: 97px;
+    height: 34px;
+
+    background-image: url('https://storage.googleapis.com/yalo-img/logoyalo.svg');
+    background-repeat: no-repeat;
+
+    overflow: hidden;
+
+}
+
+.logo span {
+    display: block;
+    padding-top: 34px;
+
+}

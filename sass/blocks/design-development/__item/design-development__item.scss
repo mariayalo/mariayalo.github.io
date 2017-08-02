@@ -1,0 +1,11 @@
+.design-development__item {
+  width: 24%;
+
+}
+
+@include respond-to(small) {
+  .design-development__item  {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+}

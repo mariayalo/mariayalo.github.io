@@ -1,0 +1,31 @@
+.bots-information__link {
+  display: block;
+  width: 30%;
+  margin: 0 0 40px 96px;
+
+  font-family: 'basic_sansbold';
+  font-size: 40px;
+
+  text-decoration: none;
+
+}
+
+.bots-information__list__item--orange
+.bots-information__link {
+  color: #FF6666;
+
+}
+
+.bots-information__list__item--purple
+.bots-information__link {
+  color: #1510E7;
+
+}
+
+@include respond-to(small) {
+  .bots-information__link {
+    width: 100%;
+    margin-left: 0;
+
+  }
+}

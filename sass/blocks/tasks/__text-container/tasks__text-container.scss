@@ -1,0 +1,10 @@
+.tasks__text-container {
+  width: 50%;
+}
+
+@include respond-to(small) {
+  .tasks__text-container {
+    width: 100%;
+
+  }
+}
