@@ -633,7 +633,7 @@ table {
 
 .bots-information__list__item {
   width: 50%;
-  background-position: center;
+  background-size: cover;
   background-repeat: no-repeat; }
 
 .bots-information__list__item--orange {
