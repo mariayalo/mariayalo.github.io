@@ -1,3 +1,49 @@
-.get-bot {
-  text-align: center;
+#get-bot{
+    width: 0;
+    padding: 0;
+    position:fixed;
+    z-index: 1;
+    top:0;
+    right:0;
+    height:100%;
+    background-color: #1510E7;
+    overflow:hidden;
+    transition: 0.4s;
+
+}
+
+#get-bot form {
+  margin-top: 40%;
+
+}
+
+#get-bot .input--white {
+  width: 85%;
+  height: 45px;
+  margin-bottom: 1px;
+  display: block;
+  margin: 0 auto 10px;
+
+}
+
+#get-bot .button--border-white {
+  margin: 0 auto;
+  display: block;
+  margin-top: 30px;
+
+}
+
+#push-content {
+    transition: margin-right .4s;
+}
+
+.closebtn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 36px;
+  margin: 20px 0 0 40px;
+  color: #fff;
+  text-decoration: none;
+
 }

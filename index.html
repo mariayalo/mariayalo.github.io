@@ -26,14 +26,27 @@
 
 <body>
 
+<section id="get-bot" class="get-bot">
+<a href="#" class="closebtn" onclick="closeNav()">×</a>
+<form>
+<p class="get-bot__copy">Hablemos y conoce cómo puedes mejorar la experiencia de tus clientes y tu empresa con un bot.  🤖💥</p>
+<input class="input--white" type="tex" placeholder="Nombre">
+<input class="input--white" type="tex" placeholder="Correo">
+<input class="input--white" type="tex" placeholder="Empresa">
+<button type="submit" class="button button--border-white">SOLICITAR RENUNIÓN</button>
+</form>
+</section>
+
+<div id="push-content">
+
 <header class="header">
 <h1 class="logo"><a href=""><span>Yalo</span></a></h1>
-<button class="button button--get-bot button--border-blue" href="">SOLICITAR BOT</button>
+<a onclick="openNav()" class="button button--get-bot button--border-blue" href="#">SOLICITAR BOT</a>
 </header>
 
 <section class="intro">
 <h2 class="intro__title">Aumenta tus ventas y mejora la relación con tus clientes con tu chatbot.</h2>
-<a href="" class="button intro__button button--blue">ME INTERESA UN BOT</a>
+<a href="#" onclick="openNav()" class="button intro__button button--blue">ME INTERESA UN BOT</a>
 <div class="phone">
 <video class="video__how-it-works" loop autoplay>
 <source src="https://storage.googleapis.com/yalo-videos/landing-page/Video%20Website%20Yalo%201.mp4" type="video/mp4">
@@ -169,7 +182,10 @@
 <section class="news">
 <h3 class="news__title">La prensa esta hablando 🔥</h3>
 <ul class="news__list">
-<li class="news__list__item"><img src="https://storage.googleapis.com/yalo-img/landing-page/logos-clients/logo-forbes.svg" alt=""></li>
+<li class="news__list__item news__list__item--one"></li>
+<li class="news__list__item news__list__item--two"></li>
+<li class="news__list__item news__list__item--three"></li>
+<li class="news__list__item news__list__item--four"></li>
 </ul>
 </section>
 
@@ -199,5 +215,19 @@
 </ul>
 </footer>
 
+</div>
+<script>
+function openNav() {
+    document.getElementById("get-bot").style.width = "30%";
+    document.getElementById("get-bot").style.padding = "40px";
+}
+
+function closeNav() {
+    document.getElementById("get-bot").style.width = "0";
+    document.getElementById("get-bot").style.padding = "0";
+}
+</script>
+
 </body>
+
 </html>
