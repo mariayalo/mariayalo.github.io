@@ -1,0 +1,6 @@
+.button--scroll {
+  width: 20px;
+  height: 20px;
+  background-image: image("https://storage.googleapis.com/yalo-img/landing-page/viewmore-arrow.svg");
+  position: absolute;
+  bottom: 0; }

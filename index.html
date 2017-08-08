@@ -30,9 +30,10 @@
 <a href="#" class="closebtn" onclick="closeNav()">×</a>
 <form>
 <p class="get-bot__copy">Hablemos y conoce cómo puedes mejorar la experiencia de tus clientes y tu empresa con un bot.  🤖💥</p>
-<input class="input--white" type="tex" placeholder="Nombre">
-<input class="input--white" type="tex" placeholder="Correo">
-<input class="input--white" type="tex" placeholder="Empresa">
+<input class="input--white" type="tex" placeholder="Tu nombre">
+<input class="input--white" type="tex" placeholder="Tu correo corporativo">
+<input class="input--white" type="tex" placeholder="Nombre de tu empresa">
+<textarea class="input--textarea" placeholder="¿Qué necesitas que haga tu bot?"></textarea>
 <button type="submit" class="button button--border-white">SOLICITAR REUNIÓN</button>
 </form>
 </section>
@@ -40,18 +41,22 @@
 <div id="push-content">
 
 <header class="header">
+<div>
 <h1 class="logo"><a href=""><span>Yalo</span></a></h1>
 <a onclick="openNav()" class="button button--get-bot button--border-blue" href="#">SOLICITAR BOT</a>
+</div>
 </header>
 
 <section class="intro">
-<h2 class="intro__title">Aumenta tus ventas y mejora la relación con tus clientes con tu chatbot.</h2>
+<h2 class="intro__title">Aumenta tus ventas y mejora la experiencia de tus clientes con tu chatbot</h2>
 <a href="#" onclick="openNav()" class="button intro__button button--blue">ME INTERESA UN BOT</a>
 <div class="phone">
 <video class="video__how-it-works" loop autoplay>
-<source src="https://storage.googleapis.com/yalo-videos/landing-page/Video%20Website%20Yalo%201.mp4" type="video/mp4">
+<source src="https://storage.googleapis.com/yalo-videos/landing-page/Video%20Website%20Yalo%201.mp4" type="video/mp4"></source>
 </video>
+<a href="#" class="intro__arrow bounce"></a>
 </div>
+
 </section>
 
 <section class="tasks">
@@ -96,14 +101,16 @@
 </div>
 </div>
 
+<h3 class="tasks__title">También, pueden realizar estas otras actividades:</h3>
+
 <ul class="tasks__list">
 <li class="tasks__item">
   <h4 class="tasks__subtitle tasks__subtitle--with-icon four">Hacer citas y reservaciones</h4>
   <p class="tasks__copy">Pueden agendar según tu disponibilidad y se conecta a tu Google Calendar.</p>
 </li>
 <li class="tasks__item ">
-  <h4 class="tasks__subtitle tasks__subtitle--with-icon five">Responder preguntas frecuentes</h4>
-  <p class="tasks__copy">Para esas preguntas usuales como ubicaciones, horarios, rastreos e información general.</p>
+  <h4 class="tasks__subtitle tasks__subtitle--with-icon five">Identificar productos a partir de una imagen.</h4>
+  <p class="tasks__copy">Si tus usuarios suelen subir fotos de tus productos para buscarlos o pedir información, un bot lo puede automatizar.</p>
 </li>
 <li class="tasks__item">
   <h4 class="tasks__subtitle tasks__subtitle--with-icon six">Cotizar y generar leads</h4>
@@ -120,11 +127,11 @@
 <section class="how-it-works">
 <h3 class="how-it-works__title">¿Cómo funciona?</h3>
 <ul class="how-it-works__list">
-<li class="how-it-works__list__item">Tu cliente llega a tu chat y te escribe </li>
-<li class="how-it-works__list__item">Puede ser en Facebook, tu sitio web y/o Twitter</li>
-<li class="how-it-works__list__item">El bot se integra a tu API y la inteligencia artificial</li>
-<li class="how-it-works__list__item">Si deseas se notifica en el CRM que ya utilizas</li>
-<li class="how-it-works__list__item">De ser necesario, un asesor puede intervenir</li>
+<li class="how-it-works__list__item">1. Tu cliente llega a tu chat y te escribe </li>
+<li class="how-it-works__list__item">2. Puede ser en Facebook, tu sitio web y/o Twitter</li>
+<li class="how-it-works__list__item">3. El bot se integra a tu API y la inteligencia artificial</li>
+<li class="how-it-works__list__item">4. Si deseas se notifica en el CRM que ya utilizas</li>
+<li class="how-it-works__list__item">5. De ser necesario, un asesor puede intervenir</li>
 </ul>
 </section>
 
@@ -139,7 +146,10 @@
   <p class="benefits__copy">🔥 Serás de las primeras empresas innovadoras en tu industria con un bot.</p>
 </li>
 </ul>
-<h3 class="benefits__subtitle"><span>9 de cada 10 personas</span> prefieren chatear con un negocio antes de llamar o descargar otra app.</h3>
+<h3 class="benefits__subtitle">
+<span>9 de cada 10 personas</span> prefieren chatear con un negocio antes de llamar o descargar otra app.
+<span class="benefits__source "> Fuente: Twilio</span>
+</h3>
 </section>
 
 <section class="clients">
@@ -179,6 +189,24 @@
 </ul>
 </section>
 
+<section class="success">
+<div class="success__title__container">
+<h4 class="sucesss__title">Aeroméxico</h4>
+<h3 class="success__subtitle">CASO DE ÉXITO</h3>
+</div>
+<ul class="success__data">
+<li>96%<span>de automatización</span></li>
+<li>300%<span>de cotizaciones</span></li>
+<li>35x<span>efectividad de promos vs email</span></li>
+</ul>
+<div class="success__video__container">
+<button class="button--play" onclick="playPause()"></button>
+<video id="video__success" class="video__success">
+<source autoplay src="https://storage.googleapis.com/yalo-videos/landing-page/interviews.mp4" type="video/mp4"></source>
+</video>
+</div>
+</section>
+
 <section class="news">
 <h3 class="news__title">La prensa esta hablando 🔥</h3>
 <ul class="news__list">
@@ -194,12 +222,12 @@
 
 <li class="bots-information__list__item--orange bots-information__list__item">
 <h4 class="bots-information__subtitle">¿Más información de bots?</h4>
-<a href="" class="bots-information__link">- Escucha nuestro Botcast</a>
+<a  href="https://soundcloud.com/user-935754453" target="_blank" class="bots-information__link">- Escucha nuestro Botcast</a>
 </li>
 
 <li class="bots-information__list__item--purple bots-information__list__item">
 <h4 class="bots-information__subtitle">¿Tienes el talento?</h4>
-<a href="" class="bots-information__link">- Trabaja con nosotros</a>
+<a href="http://yalo.applytojob.com/apply" target="_blank" class="bots-information__link">- Trabaja con nosotros</a>
 </li>
 </ul>
 
@@ -208,10 +236,11 @@
 <p class="footer__copy footer__copy--made">Hecho con ♥️ en Latinoamérica</p>
 <p class="footer__copy footer__copy--mail">📧 hola@yalochat.com</p>
 <ul class="footer__list">
-<li class="footer__list__item"><a href="" class="">YOUTUBE</a></li>
-<li class="footer__list__item"><a href="" class="">BOTCAST</a></li>
-<li class="footer__list__item"><a href="" class="">FACEBOOK</a></li>
-<li class="footer__list__item"><a href="" class="">INSTAGRAM</a></li>
+<li class="footer__list__item"><a href="https://www.youtube.com/user/jm3196M" target="_blank">YOUTUBE</a></li>
+<li class="footer__list__item"><a href="https://soundcloud.com/user-935754453" target="_blank">BOTCAST</a></li>
+<li class="footer__list__item"><a href="https://www.facebook.com/yalochat" target="_blank">FACEBOOK</a></li>
+<li class="footer__list__item"><a href="https://twitter.com/yalo_quiero" target="_blank">TWITTER</a></li>
+<li class="footer__list__item"><a href="https://www.instagram.com/yalo_oficial/" arget="_blank">INSTAGRAM</a></li>
 </ul>
 </footer>
 
@@ -225,6 +254,17 @@ function openNav() {
 function closeNav() {
     document.getElementById("get-bot").style.width = "0";
     document.getElementById("get-bot").style.padding = "0";
+}
+</script>
+
+<script>
+var myVideo = document.getElementById("video__success");
+
+function playPause() {
+    if (myVideo.paused)
+        myVideo.play();
+    else
+        myVideo.pause();
 }
 </script>
 

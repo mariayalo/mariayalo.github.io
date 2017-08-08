@@ -2,7 +2,7 @@
     width: 0;
     padding: 0;
     position:fixed;
-    z-index: 1;
+    z-index: 3;
     top:0;
     right:0;
     height:100%;
@@ -13,7 +13,7 @@
 }
 
 #get-bot form {
-  margin-top: 40%;
+  margin-top: 25%;
 
 }
 
@@ -46,4 +46,11 @@
   color: #fff;
   text-decoration: none;
 
+}
+
+.get-bot .input--textarea {
+  height: 50px;
+  display: block;
+  width: 85%;
+  margin: 0 auto 10px;
 }

@@ -1,0 +1,30 @@
+.success__data {
+  position: absolute;
+  z-index: 1;
+  text-align: center;
+  margin-top: 35px;
+  margin-left: -42px;
+
+}
+
+.success__data li {
+  padding: 16px 0;
+  border-bottom: 4px solid #A7A5FF;
+  display: block;
+  font-family: 'basic_sansbold';
+  font-size: 28px;
+  color: #fff;
+
+}
+
+.success__data li span {
+  font-family: 'basic_sansregular';
+  font-size: 18px;
+  display: block;
+
+}
+
+.success__data li:first-of-type {
+  border-top: 4px solid #A7A5FF;
+
+}

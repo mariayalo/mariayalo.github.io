@@ -8,7 +8,15 @@
 
   -webkit-flex-flow: row wrap;
   justify-content: space-around;
+  text-align: center;
 
-  text-align: left;
+}
 
+@include respond-to(small) {
+
+  .how-it-works__list {
+    justify-content: flex-start;
+    text-align: left;
+    
+  }
 }

@@ -1,5 +1,6 @@
 @import "general/config.scss";
 @import "general/queries.scss";
+@import "general/mixins.scss";
 
 @import "font/fonts.scss";
 
@@ -7,6 +8,7 @@
 @import "blocks/buttons/--border-blue/button--border-blue.scss";
 @import "blocks/buttons/--border-white/button--border-white.scss";
 @import "blocks/buttons/--blue/button--blue.scss";
+@import "blocks/buttons/--play/button--play.scss";
 
 @import "blocks/header/header.scss";
 
@@ -19,6 +21,7 @@
 @import "blocks/intro/intro.scss";
 @import "blocks/intro/__title/intro__title.scss";
 @import "blocks/intro/__button/intro__button.scss";
+@import "blocks/intro/__arrow/intro__arrow.scss";
 
 @import "blocks/phone/phone.scss";
 
@@ -81,4 +84,10 @@
 @import "blocks/get-bot/get-bot.scss";
 @import "blocks/get-bot/__copy/get-bot__copy.scss";
 
+@import "blocks/success/success.scss";
+@import "blocks/success/__title/success__title.scss";
+@import "blocks/success/__subtitle/success__subtitle.scss";
+@import "blocks/success/__data/success__data.scss";
+
 @import "blocks/input/--white/input--white.scss";
+@import "blocks/input/--textarea/input--textarea.scss";
