@@ -1,13 +1,9 @@
 .button--play {
   width: 92px;
   height: 92px;
-  top: 34%;
-  left: 44%;
-  z-index: 1;
 
   background-color: transparent;
   border: 0;
-  position: absolute;
   background-image: url('https://storage.googleapis.com/yalo-img/landing-page/icon-play.svg');
   background-repeat: no-repeat;
   background-size: 100%;
@@ -19,5 +15,5 @@
 
 .button--play:hover {
   background-position: 0 -92px;
-  
+
 }

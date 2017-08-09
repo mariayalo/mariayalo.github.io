@@ -1,5 +1,5 @@
 .success {
-  padding: 80px 0px;
+  padding: 80px;
   background-color: #383838;
 
   display: -webkit-box;
@@ -14,21 +14,34 @@
 }
 
 .success__title__container {
-  width: 40%;
-  text-align: center;
-  justify-content:center;
   align-self: center;
+  text-align: center;
+  width: 32%;
+  margin-left: -70px;
 }
 
 .success__video__container {
-  width: 60%;
-  text-align: center;
-  position: relative;
+  width: 600px;
+  height: auto;
+  .video__success {
+    width: 100%;
+
+  }
+}
+
+.success__data {
+  width: 20%;
+  margin-top: 3%;
+  margin-left: -85px;
+  position: absolute;
 
 }
 
-.success__video__container .video__success {
-  width: 80%;
-  margin: 0 auto;
-
+.button--play {
+  position: absolute;
+  z-index: 1;
+  top: 47%;
+  right: 30%;
+  transform: translate(-30%, -47%);
+  
 }
