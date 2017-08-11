@@ -33,8 +33,9 @@
 <input id="input-name" class="input--white" type="text" placeholder="Tu nombre">
 <input id="input-email" class="input--white" type="text" placeholder="Tu correo corporativo">
 <input id="input-company" class="input--white" type="text" placeholder="Nombre de tu empresa">
+<textarea id="input-textarea" class="input--textarea" placeholder="¿Qué desdeas que haga tu bot?" maxlength="500"></textarea>
 <button id="submit" type="submit" class="button button--border-white">SOLICITAR REUNIÓN</button>
-<p class="get-bot__copy">Gracias por contactarnos 🙌 </br> En un momento te estaremos escribiendo para coordinar una llamada.</p>
+<!-- <p class="get-bot__copy">Gracias por contactarnos 🙌 </br> En un momento te estaremos escribiendo para coordinar una llamada.</p> -->
 </form>
 </section>
 
@@ -248,13 +249,14 @@ function submit() {
     "email_address": document.getElementById("input-email").value,
     "full_name": document.getElementById("input-name").value,
     "company": document.getElementById("input-company").value,
-    "reason": ""
+    "reason": document.getElementById("input-textarea").value,
   }
   //console.log(data)
   $.post("http://hooks.zapier.com/hooks/catch/1227539/5jp55l/", data).done(function (response) {
     document.getElementById("input-email").value = ''
     document.getElementById("input-name").value =''
     document.getElementById("input-company").value = ''
+    document.getElementById("input-textarea").value = ''
     closeNav()
   });
 }
