@@ -9,39 +9,65 @@
   display: flex;
 
   -webkit-flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
   position: relative;
+  @include respond-to(small) {
+    padding: 30px;
+   }
+
 }
 
 .success__title__container {
-  align-self: center;
+  width: 30%;
   text-align: center;
-  width: 32%;
-  margin-left: -70px;
+  align-self: center;
+  @include respond-to(small) {
+    width: 100%;
+    margin-bottom: 20px;
+   }
+   @include respond-to(medium) {
+     width: 100%;
+     margin-bottom: 20px;
+    }
 }
 
 .success__video__container {
-  width: 600px;
-  height: auto;
-  .video__success {
+  width: 50%;
+  position: relative;
+  @include respond-to(small) {
     width: 100%;
 
+   }
+   @include respond-to(medium) {
+     width: 100%;
+
+    }
+  .video__success {
+    width: 100%;
   }
 }
 
 .success__data {
   width: 20%;
-  margin-top: 3%;
-  margin-left: -85px;
-  position: absolute;
+  margin-right: -80px;
+  z-index: 1;
+  align-self: center;
+  @include respond-to(small) {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+   }
+   @include respond-to(medium) {
+     width: 100%;
+     margin-right: 0;
+     margin-bottom: 20px;
+    }
 
 }
 
-.button--play {
-  position: absolute;
-  z-index: 1;
-  top: 47%;
-  right: 30%;
-  transform: translate(-30%, -47%);
-  
+
+
+@include respond-to(small) {
+
+
 }

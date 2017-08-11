@@ -183,13 +183,13 @@
 <h3 class="success__subtitle">CASO DE ÉXITO</h3>
 </div>
 
-
-<div id="success__video__container" class="success__video__container">
 <ul class="success__data">
 <li>96%<span>de automatización</span></li>
 <li>300%<span>de cotizaciones</span></li>
 <li>35x<span>efectividad de promos vs email</span></li>
 </ul>
+
+<div id="success__video__container" class="success__video__container">
 <button id="button__play" class="button--play" onclick="playPause()"></button>
 <video id="video__success" class="video__success">
 <source src="https://storage.googleapis.com/yalo-videos/landing-page/interviews.mp4" type="video/mp4">
@@ -254,6 +254,8 @@ var buttonPlay = document.getElementById("button__play");
 function playPause() {
     successVideo.play();
     buttonPlay.style.display = "none";
+    success__title__container.style.display = "none";
+    success__data.style.marginRight = "20000px";
 }
 </script>
 
