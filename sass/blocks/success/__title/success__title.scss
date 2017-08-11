@@ -1,6 +1,7 @@
 .sucesss__title {
   font-family: 'basic_sansbold';
   font-size: 48px;
+  font-size: 8vh;
   color: #fff;
 }
 
@@ -9,9 +10,12 @@
   height: 36px;
   margin: 0 auto 15px;
   display: block;
-
   background-image: url('https://storage.googleapis.com/yalo-img/landing-page/logos-clients/aeromexico-success-logo.svg');
 
   content: '';
+
+}
+
+@include respond-to(small) {
 
 }
