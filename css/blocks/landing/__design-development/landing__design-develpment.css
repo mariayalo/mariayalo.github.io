@@ -1,8 +1,0 @@
-.landing__design-develpment {
-  -webkit-transform: rotate(-180deg);
-  -ms-transform: rotate(-180deg);
-  transform: rotate(-180deg);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f7fbfd), to(#e7f4fc));
-  background-image: -webkit-linear-gradient(top, #f7fbfd, #e7f4fc);
-  background-image: -o-linear-gradient(top, #f7fbfd, #e7f4fc);
-  background-image: linear-gradient(to bottom, #f7fbfd, #e7f4fc); }
