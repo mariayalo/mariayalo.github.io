@@ -914,7 +914,7 @@ table {
   text-decoration: none; }
 
 .get-bot .input--textarea {
-  height: 50px;
+  height: 100px;
   display: block;
   width: 85%;
   margin: 0 auto 10px; }
