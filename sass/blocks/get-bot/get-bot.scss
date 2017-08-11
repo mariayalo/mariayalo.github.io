@@ -53,4 +53,12 @@
   display: block;
   width: 85%;
   margin: 0 auto 10px;
+
+}
+
+@include respond-to(small) {
+  .get-bot .input--textarea{
+    height: 120px;
+  }
+
 }
