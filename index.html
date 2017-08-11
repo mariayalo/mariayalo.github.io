@@ -21,18 +21,20 @@
 <meta name="twitter:site" content="@yalo_quiero"/>
 <meta name="twitter:image" content=""/>
 
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
 
 <section id="get-bot" class="get-bot">
 <a href="#" class="closebtn" onclick="closeNav()">×</a>
-<form method="post" action="https://hooks.zapier.com/hooks/catch/1227539/5jl4z2/" class="email-form" data-wid="609" novalidate="novalidate">
+<form class="email-form">
 <h2 class="get-bot__copy">Hablemos y conoce cómo puedes mejorar la experiencia de tus clientes y tu empresa con un bot.  🤖💥</h2>
 <input id="input-name" class="input--white" type="text" placeholder="Tu nombre">
 <input id="input-email" class="input--white" type="text" placeholder="Tu correo corporativo">
 <input id="input-company" class="input--white" type="text" placeholder="Nombre de tu empresa">
-<button type="submit" class="button button--border-white">SOLICITAR REUNIÓN</button>
+<button id="submit" type="submit" class="button button--border-white">SOLICITAR REUNIÓN</button>
+<p class="get-bot__copy">Gracias por contactarnos 🙌 </br> En un momento te estaremos escribiendo para coordinar una llamada.</p>
 </form>
 </section>
 
@@ -240,6 +242,25 @@
 </div>
 
 <script>
+
+function submit() {
+  var data = {
+    "email_address": document.getElementById("input-email").value,
+    "full_name": document.getElementById("input-name").value,
+    "company": document.getElementById("input-company").value,
+    "reason": ""
+  }
+  //console.log(data)
+  $.post("http://hooks.zapier.com/hooks/catch/1227539/5jp55l/", data).done(function (response) {
+    document.getElementById("input-email").value = ''
+    document.getElementById("input-name").value =''
+    document.getElementById("input-company").value = ''
+    closeNav()
+  });
+}
+
+$('.email-form').on('submit', submit);
+
 function openNav() {
     document.getElementById("get-bot").style.width = "40%";
     document.getElementById("get-bot").style.padding = "40px";
