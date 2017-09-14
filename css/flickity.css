@@ -17,6 +17,7 @@ body {
 .carousel {
   background: #000;
   position: relative !important;
+  margin-top: 30%;
 }
 
 .carousel-cell {
