@@ -16,8 +16,16 @@ body {
 
 .carousel {
   background: #000;
-  position: relative !important;
-  margin-top: 10%;
+  position: absolute !important;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: 350px;
+  background-color: #ccc;
+  border-radius: 3px;
 }
 
 .carousel-cell {
