@@ -1,2 +1,0 @@
-# mariayalo.github.io
-Landing 
