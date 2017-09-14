@@ -44,5 +44,12 @@
     <img src="img/xme-xcaret.png" alt="" />
   </div>
 </div>
+<script>
+$(document).on('touchmove', function(e) {
+    if (!$(e.target).parents('.scroll')[0]) {
+        e.preventDefault();
+    }
+});
+</script>
 </body>
 </html>
