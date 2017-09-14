@@ -23,9 +23,8 @@ body {
   bottom: 0;
   left: 0;
   width: auto;
-  height: 350px;
-  background-color: #ccc;
-  border-radius: 3px;
+  max-height: 350px;
+
 }
 
 .carousel-cell {
